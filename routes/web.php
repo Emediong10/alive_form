@@ -20,3 +20,5 @@ use App\Http\Controllers\HomeController;
 route::get('/', [HomeController:: class,'index']);
 route::get('requirement', [HomeController:: class,'requirement']);
 route::get('requirement_second', [HomeController:: class,'requirement_second']);
+route::get('eligibility', [HomeController:: class,'eligibility']);
+route::get('eligible', [HomeController:: class,'eligible']);

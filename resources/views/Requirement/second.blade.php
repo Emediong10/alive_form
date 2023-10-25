@@ -2,13 +2,15 @@
 @include('layouts.app')
 @include('layouts.nav')
 <section id="content">
-			<div class="content-wrap">
+	<div class="content-wrap">
 
-				<div class="container center">
+		<div class="container center">
 
-					<div class="heading-block center">
-						<h1>Answer some eligible Questions</h1>
-						</div>
+		<div class="heading-block center">
+			<h1>Answer some eligible Questions</h1>
+		</div>
+
+		
 	<form action="Post">
   <p>Do you want to renew your membership with ALIVE-Nigeria?</p>
   <input type="radio" id="yes" name="yes" value="yes">
@@ -29,13 +31,15 @@
   <input type="email" id="email" name="email" placeholder="abc123@gmail.com">  <br><br>        
  	
 
-			<input type="submit">
+			<input type="submit" style="color: green;">
 					</form>
-					<div style="float:right">
-			<a href="#" class="btn btn-success topmargin-lg">Next Page -></a>
+				<div class="container">
+				<div style="float:right">
+			<a href="{{url('eligibility')}}" class="btn btn-success topmargin-lg">Next Page -></a>
 			</div>
 			<div style="float:left">
 			<a href="{{url('requirement')}}" class="btn btn-success topmargin-lg"><-Previous</a>
+			</div>
 			</div>
 				</div>
 			</div>

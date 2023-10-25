@@ -77,7 +77,10 @@
 							</div>
 							</div>
 					
-							<div>
+							
+							
+							
+							<div class= "container">
 							<div style="float:left" >
 								<a href="{{url('/')}}" class="btn btn-success topmargin-sm"><-Previous</a>
 								</div>
@@ -88,7 +91,7 @@
 								<a href="{{url('/requirement_second')}}" class="btn btn-success topmargin-sm">Next Page-></a>
 								</div>
 							</div>
+
 							</div>
-							
-			
+
 		</section> 

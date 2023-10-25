@@ -23,7 +23,15 @@ class HomeController extends Controller
     return view('Requirement.second');
     }
 
+    public function eligibility()
+    {
+    return view('Eligibility.form');
+    }
 
 
+    public function eligible()
+    {
+    return view('Eligibility.eligible');
+    }
 
 }

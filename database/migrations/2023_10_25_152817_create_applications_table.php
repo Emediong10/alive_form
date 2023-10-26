@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('middlename');
             $table->string('lastname');
             $table->string('email')->unique();
+            $table->mediumText('answers')->nullable();
             $table->foreignId('chapter_id')->constrained('chapters')->nullable()->cascadeOnDelete()->cascadeOnUpdate();
             $table->foreignId('member_type_id')->constrained('membertypes')->nullable()->cascadeOnDelete()->cascadeOnUpdate();
             $table->string('phone');

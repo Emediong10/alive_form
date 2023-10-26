@@ -75,6 +75,10 @@
 								</div>
 								<div class="toggle-content"><p> 4. A ministry that has been in operation for a minimum of one year.</p></div>
 							</div>
+
+							<div class="center" >
+								<a href="{{url('membership_policies')}}" class="btn btn-danger topmargin-sm">Read Membershipship policies here</a>
+								</div>
 							</div>
 					
 							

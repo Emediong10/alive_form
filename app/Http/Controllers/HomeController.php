@@ -34,4 +34,11 @@ class HomeController extends Controller
     return view('Eligibility.eligible');
     }
 
+
+    public function membership_policies()
+    {
+    return view('Eligibility.membership_policy');
+    }
+
+
 }

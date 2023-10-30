@@ -1,5 +1,5 @@
 
-	
+
 		@include('layouts.app')
 		@include('layouts.nav')
 		<section id="content">
@@ -11,8 +11,8 @@
 						<h1> Requirement Page</h1>
 						<span>Read The requirement Carefully</span>
 					</div>
-					
-					
+
+
 								<div class="toggle toggle-bg">
 								<div class="toggle-header">
 									<div class="toggle-icon">
@@ -29,7 +29,7 @@
 							</div>
 
 
-								
+
 								<div class="toggle toggle-bg">
 								<div class="toggle-header">
 									<div class="toggle-icon">
@@ -45,8 +45,8 @@
 
 
 
-								
-								
+
+
 								<div class="toggle toggle-bg">
 								<div class="toggle-header">
 									<div class="toggle-icon">
@@ -80,22 +80,22 @@
 								<a href="{{url('membership_policies')}}" class="btn btn-danger topmargin-sm">Read Membershipship policies here</a>
 								</div>
 							</div>
-					
-							
-							
-							
+
+
+
+
 							<div class= "container">
 							<div style="float:left" >
 								<a href="{{url('/')}}" class="btn btn-success topmargin-sm"><-Previous</a>
 								</div>
-							
+
 
 
 							<div style="float:right">
-								<a href="{{url('/requirement_second')}}" class="btn btn-success topmargin-sm">Next Page-></a>
+								<a href="{{route('registration')}}" class="btn btn-success topmargin-sm">Next Page-></a>
 								</div>
 							</div>
 
 							</div>
 
-		</section> 
+		</section>

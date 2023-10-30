@@ -23,3 +23,5 @@ route::get('requirement_second', [HomeController:: class,'requirement_second']);
 route::get('eligibility', [HomeController:: class,'eligibility']);
 route::get('eligible', [HomeController:: class,'eligible']);
 route::get('membership_policies', [HomeController:: class,'membership_policies']);
+route::get('register',[HomeController::class, 'register'])->name('register');
+route::get('registration',[HomeController::class, 'registration'])->name('registration');

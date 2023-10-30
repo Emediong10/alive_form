@@ -18,12 +18,13 @@
 
 							<p>Click below to get started to get started</p>
 
-							
+
 
 							<a href="{{url('/requirement')}}" class="button button-border button-green button-rounded button-large ms-0 topmargin-sm">Join us now</a>
 						</div>
 					</div>
 
 				</div>
-                
+
 @endsection
+

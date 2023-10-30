@@ -1,4 +1,3 @@
-
 @include('layouts.app')
 @include('layouts.nav')
 <section id="content">
@@ -46,4 +45,3 @@
 			
 		</section>
 		
-		<!-- #content end -->

@@ -1,5 +1,5 @@
 
-	
+
 		@include('layouts.app')
 		@include('layouts.nav')
 		<section id="content">
@@ -11,8 +11,8 @@
 						<h1> Requirement Page</h1>
 						<span>Read The requirement Carefully</span>
 					</div>
-					
-					
+
+
 								<div class="toggle toggle-bg">
 								<div class="toggle-header">
 									<div class="toggle-icon">
@@ -32,6 +32,7 @@ Jesus Christ.</p></div>
 							</div>
 
 
+<<<<<<< HEAD
 								
 
 
@@ -39,27 +40,75 @@ Jesus Christ.</p></div>
 
 
 								
+=======
+
+								<div class="toggle toggle-bg">
+								<div class="toggle-header">
+									<div class="toggle-icon">
+										<i class="toggle-closed icon-ok-circle"></i>
+										<i class="toggle-open icon-remove-circle"></i>
+									</div>
+									<div class="toggle-title">
+										Requirement 2
+									</div>
+								</div>
+								<div class="toggle-content"><p> A ministry that supports the mission, work and leadership of the Seventh-day Adventist church, including the twenty-eight fundamental beliefs.</p></div>
+							</div>
+
+
+
+
+
+								<div class="toggle toggle-bg">
+								<div class="toggle-header">
+									<div class="toggle-icon">
+										<i class="toggle-closed icon-ok-circle"></i>
+										<i class="toggle-open icon-remove-circle"></i>
+									</div>
+									<div class="toggle-title">
+										Requirement 3
+									</div>
+								</div>
+								<div class="toggle-content"> <p> A ministry that does not solicit or accept tithe from church members.</p></div>
+							</div>
+
+
+
+
+								<div class="toggle toggle-bg">
+								<div class="toggle-header">
+									<div class="toggle-icon">
+										<i class="toggle-closed icon-ok-circle"></i>
+										<i class="toggle-open icon-remove-circle"></i>
+									</div>
+									<div class="toggle-title">
+										Requirement 4
+									</div>
+								</div>
+								<div class="toggle-content"><p> 4. A ministry that has been in operation for a minimum of one year.</p></div>
+							</div>
+>>>>>>> df7b11b813599655a6ce3b102e115106567e5dfa
 
 							<div class="center" >
 								<a href="{{url('membership_policy')}}" class="btn btn-danger topmargin-sm">Read Membershipship policies here</a>
 								</div>
 							</div>
-					
-							
-							
-							
+
+
+
+
 							<div class= "container">
 							<div style="float:left" >
 								<a href="{{url('/')}}" class="btn btn-success topmargin-sm"><-Previous</a>
 								</div>
-							
+
 
 
 							<div style="float:right">
-								<a href="{{url('/requirement_second')}}" class="btn btn-success topmargin-sm">Next Page-></a>
+								<a href="{{route('registration')}}" class="btn btn-success topmargin-sm">Next Page-></a>
 								</div>
 							</div>
 
 							</div>
 
-		</section> 
+		</section>

@@ -58,7 +58,7 @@ class Register extends Component
     public function thirdStepSubmit()
     {
         $this->currentStep = 4;
-        if($this->show_monthly_amount==true)
+        if($this->show_monthly_amount)
         {
             $validatedData = $this->validate([
                 'monthly_support' => 'required',
@@ -67,7 +67,6 @@ class Register extends Component
             ]);
         }
 
-
     }
 
     /**
@@ -75,7 +74,7 @@ class Register extends Component
      */
     public function submitForm()
     {
-        dd($this);
+        //dd($this);
         $answers=[
             'monthly_outreach'=>$this->monthly_outreach,
             'outreach'=> $this->outreach,
@@ -106,9 +105,8 @@ class Register extends Component
         ]);
 
         $this->successMsg = 'Form Submitted Successfully.';
-
-        $this->clearForm();
-
+        session()->flash('success_message',$this->successMsg);
+        $this->reset();
         $this->currentStep = 1;
     }
 

@@ -24,6 +24,7 @@ class EditApplication extends EditRecord
     }
     protected function mutateFormDataBeforeSave(array $data): array
     {
-        dd($data);
+        //dd($data);
+        return $data;
     }
 }

@@ -14,6 +14,15 @@
                     {{ $successMsg }}
                 </div>
                 @endif
+                @if (session()->has('success_message'))
+                <div class="alert alert-success">
+                    {{ session()->get('success_message') }}
+                </div>
+                @elseif (session()->has('error_message'))
+                <div class="alert alert-danger">
+                    {{ session()->get('error_message') }}
+                </div>
+                @endif
             </div>
         <div class="stepwizard">
             <div class="stepwizard-row setup-panel">

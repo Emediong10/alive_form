@@ -34,18 +34,18 @@ class ApplicationResource extends Resource
         return $form
             ->schema([
                 Section::make('View Application')->schema([
-                    TextInput::make('firstname')->required(),
-                    TextInput::make('middlename')->required(),
-                    TextInput::make('lastname')->required(),
-                    TextInput::make('email')->required()->email(),
+                    TextInput::make('firstname')->required()->disabledOn('edit'),
+                    TextInput::make('middlename')->required()->disabledOn('edit'),
+                    TextInput::make('lastname')->required()->disabledOn('edit'),
+                    TextInput::make('email')->required()->email()->disabledOn('edit'),
                     TextInput::make('phone')->required(),
                     Select::make('gender')->options([
                         'male'=>'Male',
                         'female'=>'Female'
-                    ])->required(),
-                    DatePicker::make('dob')->required()->label('Date of Birth'),
+                    ])->required()->disabledOn('edit'),
+                    DatePicker::make('dob')->required()->label('Date of Birth')->disabledOn('edit'),
                     Select::make('chapter_id')->relationship('chapter','name'),
-                    Select::make('member_type_id')->relationship('member_type','type'),
+                    Select::make('member_type_id')->relationship('member_type','type')->required(),
                     Toggle::make('status')->label('Review Completed'),
                     Repeater::make('answers')->schema([
                         TextInput::make('monthly_outreach')->label('I personally do active outreach monthly (not just church work):')->disabledOn('edit'),
@@ -60,7 +60,7 @@ class ApplicationResource extends Resource
                         TextInput::make('will_support')->label('I desire to support ALIVE-Nigeria ministry with at least monthly:')->disabledOn('edit'),
                         TextInput::make('monthly_support')->label('Do you intend to support the ministry of ALIVE Nigeria on a monthly basis?')->disabledOn('edit'),
                         TextInput::make('monthly_amount')->label('Specify Amount you intend to Support Alive Nigeria with')->disabledOn('edit'),
-                        TextInput::make('cuurency')->label('Specify the currency')->disabledOn('edit'),
+                        TextInput::make('currency')->label('Specify the currency')->disabledOn('edit'),
                     ])->columnSpan(2)->columns(2)->disableItemCreation()
                     ->disableItemDeletion()
                     ->disableItemMovement()->label('Answers to Questions'),
@@ -73,16 +73,16 @@ class ApplicationResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('firstname'),
-                TextColumn::make('middlename'),
-                TextColumn::make('lastname'),
+                TextColumn::make('firstname')->searchable(),
+                TextColumn::make('middlename')->searchable(),
+                TextColumn::make('lastname')->searchable(),
                 TextColumn::make('gender')->getStateUsing(function($record){
                     return ucfirst($record->gender);
-                }),
-                TextColumn::make('email'),
-                TextColumn::make('phone'),
-                TextColumn::make('chapter.name'),
-                TextColumn::make('member_type.type'),
+                })->sortable(),
+                TextColumn::make('email')->searchable(),
+                TextColumn::make('phone')->searchable(),
+                TextColumn::make('chapter.name')->sortable()->searchable(),
+                TextColumn::make('member_type.type')->sortable(),
                 TextColumn::make('status')->getStateUsing(function($record){
                     if($record->status==0 || $record->status==null)
                     {
@@ -92,7 +92,7 @@ class ApplicationResource extends Resource
                     {
                         return "Reviewed";
                     }
-                })
+                })->sortable()
             ])
             ->filters([
                 //

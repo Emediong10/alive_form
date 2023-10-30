@@ -49,6 +49,7 @@ class ChapterResource extends Resource
                         'danger'=> fn($state, $record): bool => $record->active ==false,
                         'success' => fn($state, $record): bool => $record->active ==true
                     ]),
+                TextColumn::make('applications_count')->counts('applications')->label('Number of Applications')
             ])
             ->filters([
                 //
@@ -64,7 +65,7 @@ class ChapterResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\ApplicationsRelationManager::class
         ];
     }
 

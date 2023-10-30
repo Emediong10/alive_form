@@ -37,7 +37,9 @@ class MemberTypeResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('type')
+                TextColumn::make('type'),
+                TextColumn::make('applications_count')->counts('applications')->label('Number of Applications')
+
             ])
             ->filters([
                 //
@@ -53,7 +55,7 @@ class MemberTypeResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\ApplicationsRelationManager::class
         ];
     }
 

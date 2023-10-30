@@ -11,7 +11,7 @@
 			<div class="col-lg-7 col-md-10">
 				<div class="card shadow-sm">
 					<div class="card-header">
-						<h4 class="mb-0 center">Membership Form</h4>
+						<h4 class="mb-0 center">Financial Membership Form</h4>
 					</div>
 					<div class="card-body">
 

@@ -20,64 +20,28 @@
 										<i class="toggle-open icon-remove-circle"></i>
 									</div>
 									<div class="toggle-title">
-										Requirement 1
+									ALIVE NIGERIA - 2023 Membership Registration Form
 									</div>
 								</div>
-								<div class="toggle-content"><p> A ministry owned or operated by Seventh-day Adventist church members in regular standing.
-
-* (The ministry can be a non-profit organization, LLC, or private business as long as the focus and primary objective is ministry.)</p></div>
+								<div class="toggle-content"><p> Our mission is to prepare Africa for the imminent return of Jesus Christ through biblical spiritual training and 
+evangelistic efforts. It is our goal to challenge African Seventh-day Adventist young adults to live a lifestyle 
+of authentic biblical excellence, instill a missionary volunteer spirit in every African Seventh-day Adventist 
+young adult, mobilize and support young adult missionary movements across Africa, create a meaningful 
+impact in neglected areas, and finally change the continent of Africa by ushering in the imminent return of 
+Jesus Christ.</p></div>
 							</div>
 
 
 								
-								<div class="toggle toggle-bg">
-								<div class="toggle-header">
-									<div class="toggle-icon">
-										<i class="toggle-closed icon-ok-circle"></i>
-										<i class="toggle-open icon-remove-circle"></i>
-									</div>
-									<div class="toggle-title">
-										Requirement 2
-									</div>
-								</div>
-								<div class="toggle-content"><p> A ministry that supports the mission, work and leadership of the Seventh-day Adventist church, including the twenty-eight fundamental beliefs.</p></div>
-							</div>
+
+
 
 
 
 								
-								
-								<div class="toggle toggle-bg">
-								<div class="toggle-header">
-									<div class="toggle-icon">
-										<i class="toggle-closed icon-ok-circle"></i>
-										<i class="toggle-open icon-remove-circle"></i>
-									</div>
-									<div class="toggle-title">
-										Requirement 3
-									</div>
-								</div>
-								<div class="toggle-content"> <p> A ministry that does not solicit or accept tithe from church members.</p></div>
-							</div>
-
-
-
-
-								<div class="toggle toggle-bg">
-								<div class="toggle-header">
-									<div class="toggle-icon">
-										<i class="toggle-closed icon-ok-circle"></i>
-										<i class="toggle-open icon-remove-circle"></i>
-									</div>
-									<div class="toggle-title">
-										Requirement 4
-									</div>
-								</div>
-								<div class="toggle-content"><p> 4. A ministry that has been in operation for a minimum of one year.</p></div>
-							</div>
 
 							<div class="center" >
-								<a href="{{url('membership_policies')}}" class="btn btn-danger topmargin-sm">Read Membershipship policies here</a>
+								<a href="{{url('membership_policy')}}" class="btn btn-danger topmargin-sm">Read Membershipship policies here</a>
 								</div>
 							</div>
 					

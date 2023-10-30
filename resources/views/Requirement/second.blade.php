@@ -21,9 +21,9 @@
 
   <br>  <br>
   <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname" placeholder="firstname" required><br><br>
+  <input type="text" id="fname" name="fname" required><br><br>
   <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname" placeholder="lastname" required><br><br>
+  <input type="text" id="lname" name="lname"  required><br><br>
  <label for="phone"> Phone:</label>
   <input type="tel" id="phone" name="phone" placeholder="080-111-111-11" required><br><br>
   

@@ -8,7 +8,7 @@
 
 					<div class="row align-items-center col-mb-50">
 						<div class="col-md-4 center">
-							<img data-animate="fadeInLeft" src="assets/images/welcome2.jpg" alt="Welcome">
+							<img data-animate="fadeInLeft" src="assets/images/welcome2.png" alt="Welcome">
 						</div>
 
 						<div class="col-md-8 text-center text-md-start">
